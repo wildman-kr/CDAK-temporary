@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>한국커리어개발협회 (CDAK)</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#0066CC',
+secondary: '#4A90E2'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+.news-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 2rem;
+}
+.service-card:hover {
+transform: translateY(-5px);
+transition: all 0.3s ease;
+}
+.partner-logo {
+filter: grayscale(100%);
+opacity: 0.7;
+transition: all 0.3s ease;
+}
+.partner-logo:hover {
+filter: grayscale(0%);
+opacity: 1;
+}
+</style>
+</head>
+<body class="bg-white">
+<header class="fixed w-full bg-white shadow-sm z-50">
+<div class="container mx-auto px-4">
+<div class="flex justify-between items-center h-16">
+<div class="flex items-center space-x-4">
+<a href="#" class="h-12">
+<img src="https://static.readdy.ai/image/6cd4135abdfb67e2a873a33c17c7f2d0/10bc489db0a3d6cf4bf0e4b02a24a7ee.png" alt="CDAK Logo" class="h-full">
+</a>
+<span class="text-gray-600 hidden md:inline">한국커리어개발협회</span>
+</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a href="#about" class="text-gray-600 hover:text-primary">소개</a>
+<a href="#services" class="text-gray-600 hover:text-primary">서비스</a>
+<a href="#news" class="text-gray-600 hover:text-primary">소식</a>
+<a href="#partners" class="text-gray-600 hover:text-primary">파트너</a>
+<a href="#contact" class="text-gray-600 hover:text-primary">문의</a>
+<button class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-opacity-90">로그인</button>
+</nav>
+<button class="md:hidden w-10 h-10 flex items-center justify-center">
+<i class="ri-menu-line text-2xl"></i>
+</button>
+</div>
+</div>
+</header>
+<main class="pt-16">
+<section class="relative h-[600px] bg-gradient-to-r from-primary/5 to-primary/10 overflow-hidden">
+<div class="container mx-auto px-4 h-full flex items-center">
+<div class="w-1/2">
+<h1 class="text-5xl font-bold mb-6">커리어개발 실천가와 연구자를 위한 플랫폼</h1>
+<p class="text-xl text-gray-600 mb-8">정기적인 세미나와 컨퍼런스, 훈련 및 교육을 제공하고,<br>커리어개발 영역의 스탠다드를 만들어 나가고자 합니다.</p>
+<div class="flex space-x-4">
+<button class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-opacity-90">회원가입</button>
+<button class="border border-primary text-primary px-8 py-3 !rounded-button hover:bg-primary hover:text-white">회원가입 안내</button>
+</div>
+</div>
+<div class="absolute right-0 top-0 w-1/2 h-full">
+<img src="https://public.readdy.ai/ai/img_res/25d72470c3ea881ac630f981558534f9.jpg"
+class="object-cover w-full h-full" alt="Career Development Counseling">
+</div>
+</div>
+</section>
+<section id="about" class="py-20 bg-white">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center mb-16">한국커리어개발협회(CDAK) 소개</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white p-8 rounded-lg shadow-lg">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+<i class="ri-flag-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">우리의 사명</h3>
+<p class="text-gray-600">대한민국과 국제사회의 관점에서 커리어개발에 대한 올바른 이해를 도모하고, 직업능력향상을 비롯한 생애커리어개발과 관련된 아이디어와 경험을 공유하는 포럼 및 컨퍼런스 등의 개최를 통해 대한민국과 국제사회의 발전에 기여한다.</p>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-lg">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+<i class="ri-eye-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">우리의 비전</h3>
+<p class="text-gray-600">커리어개발 영역의 기준을 확립하고, 실천가의 전문성을 향상시키고, 실천가와 연구자의 상호교류를 활성화하여 커리어개발 서비스의 품질을 높여 고객(내담자)의 복지를 향상한다.</p>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-lg">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-6">
+<i class="ri-award-line text-primary text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">우리의 가치</h3>
+<p class="text-gray-600">커리어개발 영역에서 글로벌 수준의 전문성, 협회 운영의 투명성, 다양한 회원에 대한 포용성, 협회 서비스의 공익성, 변화에 대한 열린 마음</p>
+</div>
+</div>
+</div>
+</section>
+<section id="services" class="py-20 bg-gray-50">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center mb-16">협회의 서비스</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="service-card bg-white p-6 rounded-lg shadow-lg">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-calendar-event-line text-primary text-xl"></i>
+</div>
+<h3 class="text-lg font-semibold mb-3">연례 컨퍼런스</h3>
+<p class="text-gray-600 text-sm">커리어개발 실천가와 실천가, 실천가와 연구자, 연구자와 연구자 등의 다양한 교류가 가능한 플랫폼으로 연구와 실제 간의 간격을 좁히고 실천가와 연구자 상호 성장을 돕고 실천가의 전문성 향상의 기회를 제공하는 정기적인 컨퍼런스를 개최합니다. (운영주기: 1~2년 1회)</p>
+</div>
+<div class="service-card bg-white p-6 rounded-lg shadow-lg">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-presentation-line text-primary text-xl"></i>
+</div>
+<h3 class="text-lg font-semibold mb-3">정기 세미나</h3>
+<p class="text-gray-600 text-sm">최신 이슈와 트랜드, 커리어개발 이론과 기법, 국내외 최신 연구 동향과 실제, 커리어개발 우수사례, 커리어개발 관련 우수 저서 및 저자 초청 강의 등의 내용으로 회원의 전문성 향상을 위한 세미나를 개최합니다. (운영주기: 분기별 1~2회)</p>
+</div>
+<div class="service-card bg-white p-6 rounded-lg shadow-lg">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-graduation-cap-line text-primary text-xl"></i>
+</div>
+<h3 class="text-lg font-semibold mb-3">커리어개발 전문가 교육과정</h3>
+<p class="text-gray-600 text-sm">커리어개발 이론에 기반한 다양한 실천 사례, 기법, AI를 포함한 IT기술의 적용, 프로그램 개발 및 운영 등 커리어개발 실천가의 역량 향상에 도움이 되는 내용으로 4시간 이상 교육 또는 훈련과정을 운영합니다. (운영주기: 비정기적)</p>
+</div>
+<div class="service-card bg-white p-6 rounded-lg shadow-lg">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-team-line text-primary text-xl"></i>
+</div>
+<h3 class="text-lg font-semibold mb-3">회원간 소모임</h3>
+<p class="text-gray-600 text-sm">회원의 자발적인 제안으로 협회 회원들간의 교류를 통하여 특정 주제나 관심사에 대해 토론, 논의, 훈련 등을 할 수 있는 소모임을 지원합니다. (현재 운영 중인 소모임: 최신 진로연구 토론모임, 진로역량 연구회)</p>
+</div>
+</div>
+</div>
+</section>
+<section id="news" class="py-20 bg-white">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center mb-16">Latest News & Events</h2>
+<div class="news-grid">
+<div class="bg-white rounded-lg shadow-lg overflow-hidden">
+<img src="https://public.readdy.ai/ai/img_res/c5842d48fa808ce6a7defe7dd05ffdf5.jpg"
+class="w-full h-48 object-cover" alt="News">
+<div class="p-6">
+<span class="text-sm text-primary">February 20, 2025</span>
+<h3 class="text-xl font-semibold mt-2">Annual Career Development Conference 2025</h3>
+<p class="text-gray-600 mt-2">Join us for the largest career development conference in Korea, featuring international speakers and innovative workshops.</p>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-lg overflow-hidden">
+<img src="https://public.readdy.ai/ai/img_res/b0159373552a163c88dafc352dea4d11.jpg"
+class="w-full h-48 object-cover" alt="News">
+<div class="p-6">
+<span class="text-sm text-primary">March 15, 2025</span>
+<h3 class="text-xl font-semibold mt-2">Spring Certification Program</h3>
+<p class="text-gray-600 mt-2">Applications now open for our renowned Career Development Professional Certification Program.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="partners" class="py-20 bg-gray-50">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center mb-16">Our Partners</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+<div class="partner-logo bg-white p-8 rounded-lg shadow-lg flex items-center justify-center">
+<img src="https://public.readdy.ai/ai/img_res/5d068b573cc7d4b94c5ac6338c5e3b66.jpg"
+class="h-12" alt="Partner">
+</div>
+<div class="partner-logo bg-white p-8 rounded-lg shadow-lg flex items-center justify-center">
+<img src="https://public.readdy.ai/ai/img_res/03538e87cdee93b59c73fcf7a362a7d3.jpg"
+class="h-12" alt="Partner">
+</div>
+<div class="partner-logo bg-white p-8 rounded-lg shadow-lg flex items-center justify-center">
+<img src="https://public.readdy.ai/ai/img_res/1a1437307df122a79c7d05e979b4c655.jpg"
+class="h-12" alt="Partner">
+</div>
+<div class="partner-logo bg-white p-8 rounded-lg shadow-lg flex items-center justify-center">
+<img src="https://public.readdy.ai/ai/img_res/5534a1968c16010fad024589e97041da.jpg"
+class="h-12" alt="Partner">
+</div>
+</div>
+</div>
+</section>
+<section id="contact" class="py-20 bg-white">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center mb-16">Contact Us</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+<div>
+<form class="space-y-6">
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+<input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary" required>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+<input type="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary" required>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+<textarea class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary h-32" required></textarea>
+</div>
+<button type="submit" class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-opacity-90 w-full">Send Message</button>
+</form>
+</div>
+<div class="space-y-8">
+<div>
+<h3 class="text-xl font-semibold mb-4">Office Location</h3>
+<p class="text-gray-600">123 Career Development Street<br>Seoul, South Korea</p>
+</div>
+<div>
+<h3 class="text-xl font-semibold mb-4">Contact Information</h3>
+<p class="text-gray-600">Email: info@cdak.org<br>Phone: +82 2 1234 5678</p>
+</div>
+<div>
+<h3 class="text-xl font-semibold mb-4">Follow Us</h3>
+<div class="flex space-x-4">
+<a href="#" class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-white">
+<i class="ri-linkedin-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-white">
+<i class="ri-twitter-fill"></i>
+</a>
+<a href="#" class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center hover:bg-primary hover:text-white">
+<i class="ri-facebook-fill"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-gray-900 text-white py-12">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div>
+<h4 class="text-xl font-semibold mb-4">About CDAK</h4>
+<p class="text-gray-400">Leading the way in professional career development standards and practices in Korea.</p>
+</div>
+<div>
+<h4 class="text-xl font-semibold mb-4">Quick Links</h4>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-400 hover:text-white">About Us</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">Services</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">News</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xl font-semibold mb-4">Resources</h4>
+<ul class="space-y-2">
+<li><a href="#" class="text-gray-400 hover:text-white">Research Papers</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">Certification</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">Training</a></li>
+<li><a href="#" class="text-gray-400 hover:text-white">Events</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-xl font-semibold mb-4">Newsletter</h4>
+<p class="text-gray-400 mb-4">Subscribe to our newsletter for updates</p>
+<form class="flex">
+<input type="email" placeholder="Your email" class="flex-1 px-4 py-2 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-primary">
+<button type="submit" class="bg-primary text-white px-4 py-2 rounded-r-lg hover:bg-opacity-90">Subscribe</button>
+</form>
+</div>
+</div>
+<div class="border-t border-gray-800 mt-12 pt-8 text-center">
+<p class="text-gray-400">&copy; 2025 한국커리어개발협회. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+const header = document.querySelector('header');
+const mobileMenuButton = document.querySelector('button.md\\:hidden');
+const nav = document.querySelector('nav');
+window.addEventListener('scroll', () => {
+if (window.scrollY > 0) {
+header.classList.add('shadow');
+} else {
+header.classList.remove('shadow');
+}
+});
+mobileMenuButton.addEventListener('click', () => {
+nav.classList.toggle('hidden');
+});
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+anchor.addEventListener('click', function (e) {
+e.preventDefault();
+document.querySelector(this.getAttribute('href')).scrollIntoView({
+behavior: 'smooth'
+});
+});
+});
+const form = document.querySelector('form');
+form.addEventListener('submit', function(e) {
+e.preventDefault();
+const formData = new FormData(form);
+console.log('Form submitted:', Object.fromEntries(formData));
+form.reset();
+});
+});
+</script>
+</body>
+</html>
